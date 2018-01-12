@@ -72,18 +72,19 @@ msgBox {
 }
 
 msgName {
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
     margin-top: 4px;
 }
 
 msg {
-    margin-bottom: 4px;
     font-size: 14px;
     color: #999999;
 }
 
 date {
     margin-top: 4px;
+    font-size: 12px;
+    color: #999999;
 }
 `)
