@@ -8,9 +8,9 @@ export default class Header extends React.Component {
       <View style={styles.header}>
         <Text style={styles.headerTitle}>微信（156）</Text>
         <Image resizeMode='contain' style={[styles.headerImageSize, styles.headerImageSearch]}
-               source={require('../../assets/imgs/ic_search_white.png')}/>
+               source={require('src/assets/imgs/ic_search_white.png')}/>
         <Image resizeMode='contain' style={[styles.headerImageSize, styles.headerImageAdd]}
-               source={require('../../assets/imgs/ic_add_white.png')}/>
+               source={require('src/assets/imgs/ic_add_white.png')}/>
       </View>
     )
   }

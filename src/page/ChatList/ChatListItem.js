@@ -11,7 +11,7 @@ export default class ChatListItem extends React.Component {
     return (
       <View style={styles.item}>
         <View style={styles.headBox}>
-          <Image style={styles.headPortrait} source={require('../../assets/imgs/touxiang.jpg')}/>
+          <Image style={styles.headPortrait} source={require('src/assets/imgs/touxiang.jpg')}/>
           <Text style={styles.msgNum}>{(this.props.msgNum > 99 ? 99 : this.props.msgNum) || '3'}</Text>
         </View>
         <View style={styles.msgBox}>

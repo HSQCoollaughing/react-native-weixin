@@ -3,8 +3,8 @@ import RNC from 'react-native-css'
 import { View, Dimensions } from 'react-native'
 
 import ScrollableTabView from 'react-native-scrollable-tab-view'
-import BottomTabBar from '../components/BottomTabBar/BottomTabBar'
-import Header from '../components/Header/Header'
+import BottomTabBar from 'src/components/BottomTabBar/BottomTabBar'
+import Header from 'src/components/Header/Header'
 
 import ChatList from './ChatList/ChatList'
 import Category from './Category/Category'

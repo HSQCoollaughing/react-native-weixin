@@ -6,23 +6,23 @@ export default class BottomTabBar extends React.Component {
   icon = [
     {
       name: '微信',
-      sicon: require('../../assets/imgs/home_selected.png'),
-      nicon: require('../../assets/imgs/home_normal.png')
+      sicon: require('src/assets/imgs/home_selected.png'),
+      nicon: require('src/assets/imgs/home_normal.png')
     },
     {
       name: '通讯录',
-      sicon: require('../../assets/imgs/category_selected.png'),
-      nicon: require('../../assets/imgs/category_normal.png')
+      sicon: require('src/assets/imgs/category_selected.png'),
+      nicon: require('src/assets/imgs/category_normal.png')
     },
     {
       name: '发现',
-      sicon: require('../../assets/imgs/service_selected.png'),
-      nicon: require('../../assets/imgs/service_normal.png')
+      sicon: require('src/assets/imgs/service_selected.png'),
+      nicon: require('src/assets/imgs/service_normal.png')
     },
     {
       name: '我',
-      sicon: require('../../assets/imgs/mine_selected.png'),
-      nicon: require('../../assets/imgs/mine_normal.png')
+      sicon: require('src/assets/imgs/mine_selected.png'),
+      nicon: require('src/assets/imgs/mine_normal.png')
     }
   ]
 
