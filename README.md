@@ -1,5 +1,7 @@
 # react-native-weixin
 
+![](./weixin.gif)
+
 ## 代办事项
 
 - [x] 主页
