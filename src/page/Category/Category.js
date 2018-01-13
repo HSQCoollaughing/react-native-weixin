@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, FlatList } from 'react-native'
 import RNC from 'react-native-css'
 import { connect } from 'react-redux'
-import ListIconItem from './Childs/ListIconItem'
+import ListIconItem from 'src/components/IconItem/IconItem'
 
 @connect(
   state => state.chat,

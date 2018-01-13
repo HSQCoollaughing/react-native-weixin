@@ -4,7 +4,10 @@ import { View, Image, Text, TouchableHighlight } from 'react-native'
 
 export default class ListIconItem extends React.Component {
   render () {
-    return <TouchableHighlight style={{backgroundColor: '#fff'}} underlayColor='#DDDDDD' onPress={() => {}}>
+    return <TouchableHighlight
+      style={{backgroundColor: '#fff'}}
+      underlayColor='#DDDDDD'
+      onPress={(e) => this.props.onPress ? this.props.onPress() : null}>
       <View style={styles.iconItem}>
         <Image style={[styles.icon, this.props.iconSize]}
                source={this.props.icon || require('src/assets/imgs/ic_new_friend.png')}/>
