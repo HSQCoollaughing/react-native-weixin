@@ -1,46 +1,16 @@
 import React from 'react'
 import { View, Text, FlatList } from 'react-native'
 import RNC from 'react-native-css'
+import { connect } from 'react-redux'
 import ListIconItem from './Childs/ListIconItem'
 
+@connect(
+  state => state.chat,
+  {}
+)
 export default class Category extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {
-      categoryList: [
-        {
-          id: '1',
-          type: 'letter',
-          data: 'A'
-        },
-        {
-          type: 'category',
-          id: '2',
-          data: {
-            name: 'AAAA'
-          }
-        },
-        {
-          type: 'category',
-          id: '3',
-          data: {
-            name: 'ACCC'
-          }
-        },
-        {
-          id: '4',
-          type: 'letter',
-          data: 'C'
-        },
-        {
-          id: '5',
-          type: 'category',
-          data: {
-            name: 'C1111'
-          }
-        },
-      ]
-    }
   }
 
   render () {
@@ -52,8 +22,8 @@ export default class Category extends React.Component {
         <ListIconItem icon={require('src/assets/imgs/ic_offical.png')} text='公众号'/>
 
         <FlatList
-          extraData={this.state.categoryList}
-          data={this.state.categoryList}
+          extraData={this.props.categorys}
+          data={this.props.categorys}
           keyExtractor={item => item.id}
           renderItem={({item}) => this.renderItem(item)}/>
       </View>
@@ -79,6 +49,4 @@ const styles = RNC(`
         background-color: #CCCCCC;
         justify-content: center;
     }
-
-
 `)

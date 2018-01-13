@@ -7,6 +7,39 @@ const initState = {
       msgText: '今天吃啥',
       date: '11:30'
     }
+  ],
+  categorys: [
+    {
+      id: '1',
+      type: 'letter',
+      data: 'A'
+    },
+    {
+      type: 'category',
+      id: '2',
+      data: {
+        name: 'AAAA'
+      }
+    },
+    {
+      type: 'category',
+      id: '3',
+      data: {
+        name: 'ACCC'
+      }
+    },
+    {
+      id: '4',
+      type: 'letter',
+      data: 'C'
+    },
+    {
+      id: '5',
+      type: 'category',
+      data: {
+        name: 'C1111'
+      }
+    },
   ]
 }
 
