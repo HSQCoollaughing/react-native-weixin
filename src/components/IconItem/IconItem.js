@@ -1,17 +1,27 @@
 import React from 'react'
 import RNC from 'react-native-css'
-import { View, Image, Text, TouchableHighlight } from 'react-native'
+import { Image, Text, TouchableHighlight, View } from 'react-native'
 
 export default class ListIconItem extends React.Component {
+
+  static defaultIcon = require('src/assets/imgs/nim_image_download_failed.jpg')
+
   render () {
+    const {
+      onPress,
+      icon,
+      isDivider,
+      iconSize,
+      text
+    } = this.props
     return <TouchableHighlight
       style={{backgroundColor: '#fff'}}
       underlayColor='#DDDDDD'
-      onPress={(e) => this.props.onPress ? this.props.onPress() : null}>
-      <View style={styles.iconItem}>
-        <Image style={[styles.icon, this.props.iconSize]}
-               source={this.props.icon || require('src/assets/imgs/nim_image_download_failed.jpg')}/>
-        <Text style={styles.text}>{this.props.text || '新的朋友'}</Text>
+      onPress={(e) => onPress ? onPress() : null}>
+      <View style={[styles.iconItem, !isDivider ? styles.divider : null]}>
+        <Image style={[styles.icon, iconSize]}
+               source={icon || this.defaultIcon}/>
+        <Text style={styles.text}>{text || '新的朋友'}</Text>
       </View>
     </TouchableHighlight>
   }
@@ -25,9 +35,12 @@ const styles = RNC(`
         align-items: center;
         padding: 4px;
         padding-right: 16px;
+        margin-left: 16px;
+    }
+
+    .divider {
         border-bottom-width: 0.5px;
         border-bottom-color: #DDDDDD;
-        margin-left: 16px;
     }
 
     .icon {

@@ -7,7 +7,7 @@ export default class Service extends React.Component {
   render () {
     return <View>
       <View style={styles.block}/>
-      <IconItem iconItem={require('src/assets/imgs/rainbow_ic.png')}/>
+      <IconItem icon={require('src/assets/imgs/ic_friend_circle.png')} text="朋友圈"/>
 
     </View>
   }
