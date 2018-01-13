@@ -46,7 +46,7 @@ const styles = RNC(`
     .letter {
         height: 24px;
         padding-left: 20px;
-        background-color: #CCCCCC;
+        background-color: #DDDDDD;
         justify-content: center;
     }
 `)

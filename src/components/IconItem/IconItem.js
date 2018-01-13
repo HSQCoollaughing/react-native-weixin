@@ -10,7 +10,7 @@ export default class ListIconItem extends React.Component {
     const {
       onPress,
       icon,
-      isDivider,
+      isDivider = true,
       iconSize,
       text
     } = this.props
@@ -18,7 +18,7 @@ export default class ListIconItem extends React.Component {
       style={{backgroundColor: '#fff'}}
       underlayColor='#DDDDDD'
       onPress={(e) => onPress ? onPress() : null}>
-      <View style={[styles.iconItem, !isDivider ? styles.divider : null]}>
+      <View style={[styles.iconItem, isDivider ? styles.divider : null]}>
         <Image style={[styles.icon, iconSize]}
                source={icon || this.defaultIcon}/>
         <Text style={styles.text}>{text || '新的朋友'}</Text>
