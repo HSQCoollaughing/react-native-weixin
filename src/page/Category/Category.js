@@ -3,6 +3,7 @@ import { View, Text, FlatList } from 'react-native'
 import RNC from 'react-native-css'
 import { connect } from 'react-redux'
 import ListIconItem from 'src/components/IconItem/IconItem'
+import theme from 'src/config/theme'
 
 @connect(
   state => state.chat,
@@ -45,12 +46,12 @@ export default class Category extends React.Component {
 const styles = RNC(`
     .wrapper {
         flex: 1;
-        background-color: #DDDDDD;
+        background-color: ${theme.bgColor};
     }
     .letter {
         height: 24px;
         padding-left: 20px;
-        background-color: #DDDDDD;
+        background-color:  ${theme.bgColor};
         justify-content: center;
     }
 `)

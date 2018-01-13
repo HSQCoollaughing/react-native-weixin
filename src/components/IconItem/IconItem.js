@@ -1,6 +1,7 @@
 import React from 'react'
 import RNC from 'react-native-css'
 import { Image, Text, TouchableHighlight, View } from 'react-native'
+import theme from 'src/config/theme'
 
 export default class ListIconItem extends React.Component {
 
@@ -40,7 +41,7 @@ const styles = RNC(`
 
     .divider {
         border-bottom-width: 0.5px;
-        border-bottom-color: #DDDDDD;
+        border-bottom-color: ${theme.bgColor};
     }
 
     .icon {

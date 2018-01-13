@@ -2,6 +2,7 @@ import React from 'react'
 import { View } from 'react-native'
 import RNC from 'react-native-css'
 import IconItem from 'src/components/IconItem/IconItem'
+import theme from 'src/config/theme'
 
 export default class Service extends React.Component {
   render () {
@@ -30,11 +31,11 @@ export default class Service extends React.Component {
 const styles = RNC(`
     .wrapper {
         flex: 1;
-        background-color: #DDDDDD;
+        background-color: ${theme.bgColor};
     }
 
     .block {
-        background-color: #DDDDDD;
+        background-color: ${theme.bgColor};
         height: 24px;
     }
 `)
