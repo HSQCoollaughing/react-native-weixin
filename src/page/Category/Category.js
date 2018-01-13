@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, FlatList } from 'react-native'
-import ListIconItem from './ListIconItem'
+import ListIconItem from './Childs/ListIconItem'
 
 export default class Category extends React.Component {
   render () {

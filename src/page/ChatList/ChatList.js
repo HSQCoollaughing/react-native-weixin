@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, FlatList, TouchableHighlight } from 'react-native'
-import ChatListItem from './ChatListItem'
+import ChatListItem from './Childs/ChatListItem'
 
 export default class ChatList extends React.Component {
   _keyExtractor = (item) => item.id
