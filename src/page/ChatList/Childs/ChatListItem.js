@@ -31,7 +31,7 @@ const {width} = Dimensions.get('window')
 
 // language=CSS
 const styles = RNC(`
-item {
+.item {
     height: 64px;
     padding: 8px;
     flex-direction: row;
@@ -39,7 +39,7 @@ item {
     border-bottom-color: #DDDDDD;
 }
 
-headBox {
+.headBox {
     width: 50px;
     margin-right: 8px;
     position: relative;
@@ -47,12 +47,12 @@ headBox {
     justify-content: center;
 }
 
-headPortrait {
+.headPortrait {
     width: 48px;
     height: 48px;
 }
 
-msgNum {
+.msgNum {
     background-color: red;
     width: 14px;
     height: 14px;
@@ -65,24 +65,24 @@ msgNum {
     top: 0;
 }
 
-msgBox {
+.msgBox {
     width: ${width - 50 - 8 - 50};
     flex-direction: column;
     justify-content: space-around;
 }
 
-msgName {
+.msgName {
     font-size: 16px;
     color: #000;
     margin-top: 4px;
 }
 
-msg {
+.msg {
     font-size: 14px;
     color: #999999;
 }
 
-date {
+.date {
     margin-top: 4px;
     font-size: 12px;
     color: #999999;

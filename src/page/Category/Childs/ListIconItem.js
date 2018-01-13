@@ -15,7 +15,7 @@ export default class ListIconItem extends React.Component {
 
 // language=CSS
 const styles = RNC(`
-    iconItem {
+    .iconItem {
         height: 56px;
         flex-direction: row;
         align-items: center;
@@ -26,12 +26,12 @@ const styles = RNC(`
         margin-left: 16px;
     }
 
-    icon {
+    .icon {
         width: 36px;
         height: 36px;
     }
 
-    text {
+    .text {
         font-size: 16px;
         margin-left: 10px;
         color: #000;

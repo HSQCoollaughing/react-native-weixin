@@ -37,7 +37,7 @@ export default class ChatList extends React.PureComponent {
   render () {
     return (
       <FlatList
-        extraData={this.props}
+        extraData={this.props.msgs}
         data={this.props.msgs}
         keyExtractor={this._keyExtractor}
         renderItem={({item}) => this.renderItem(item)}/>

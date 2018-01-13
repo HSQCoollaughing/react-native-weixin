@@ -25,7 +25,7 @@ export default class App extends Component {
 
 // language=CSS
 const styles = RNC(`
-    container {
+    .container {
         flex: 1;
         background-color: #fff;
     }

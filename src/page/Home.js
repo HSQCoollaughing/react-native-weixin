@@ -39,10 +39,10 @@ export default class Home extends React.Component {
 
 // language=CSS
 const styles = RNC(`
-    wrapper {
+    .wrapper {
         height: ${Dimensions.get('window').height};
     }
-    container{
+    .container{
      height: ${Dimensions.get('window').height - 50};
      margin-top: 50px;
      padding-bottom: 72px; 
