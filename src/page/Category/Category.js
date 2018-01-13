@@ -15,7 +15,7 @@ export default class Category extends React.Component {
 
   render () {
     return (
-      <View>
+      <View style={styles.wrapper}>
         <ListIconItem icon={require('src/assets/imgs/ic_new_friend.png')} text='新的朋友'/>
         <ListIconItem icon={require('src/assets/imgs/ic_group_cheat.png')} text='群聊'/>
         <ListIconItem icon={require('src/assets/imgs/ic_tag.png')} text='标签'/>
@@ -43,6 +43,10 @@ export default class Category extends React.Component {
 
 // language=CSS
 const styles = RNC(`
+    .wrapper {
+        flex: 1;
+        background-color: #DDDDDD;
+    }
     .letter {
         height: 24px;
         padding-left: 20px;

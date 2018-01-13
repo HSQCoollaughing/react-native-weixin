@@ -9,7 +9,7 @@ export default class ListIconItem extends React.Component {
   render () {
     const {
       onPress,
-      icon,
+      icon = null,
       isDivider = true,
       iconSize,
       text

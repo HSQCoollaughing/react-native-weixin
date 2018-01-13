@@ -10,28 +10,15 @@ import { addMsg, addNum } from 'src/store/reducers/chat'
 )
 export default class ChatList extends React.PureComponent {
   _keyExtractor = (item) => item.id
-  timecode = null
 
   constructor (props) {
     super(props)
   }
 
   componentDidMount () {
-    let id = 2
-    // setInterval(() => {
-    //   id++
-    //   this.props.addMsg({
-    //     id: id,
-    //     name: `腾讯新闻`,
-    //     msgNum: 8,
-    //     msgText: '不知道干点啥！',
-    //     date: '11:32'
-    //   })
-    // }, 5000)
   }
 
   componentWillUnmount () {
-    clearInterval(this.timecode)
   }
 
   render () {

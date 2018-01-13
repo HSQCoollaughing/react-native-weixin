@@ -5,7 +5,7 @@ import IconItem from 'src/components/IconItem/IconItem'
 
 export default class Service extends React.Component {
   render () {
-    return <View>
+    return <View style={styles.wrapper}>
       <View style={styles.block}/>
       <IconItem isDivider={false} icon={require('src/assets/imgs/ic_friend_circle.png')} text="朋友圈"/>
       <View style={styles.block}/>
@@ -28,6 +28,11 @@ export default class Service extends React.Component {
 
 // language=CSS
 const styles = RNC(`
+    .wrapper {
+        flex: 1;
+        background-color: #DDDDDD;
+    }
+
     .block {
         background-color: #DDDDDD;
         height: 24px;
