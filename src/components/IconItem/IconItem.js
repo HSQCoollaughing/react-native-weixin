@@ -10,7 +10,7 @@ export default class ListIconItem extends React.Component {
       onPress={(e) => this.props.onPress ? this.props.onPress() : null}>
       <View style={styles.iconItem}>
         <Image style={[styles.icon, this.props.iconSize]}
-               source={this.props.icon || require('src/assets/imgs/ic_new_friend.png')}/>
+               source={this.props.icon || require('src/assets/imgs/nim_image_download_failed.jpg')}/>
         <Text style={styles.text}>{this.props.text || '新的朋友'}</Text>
       </View>
     </TouchableHighlight>
