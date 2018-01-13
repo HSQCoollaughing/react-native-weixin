@@ -13,7 +13,9 @@
     "react-native-css": "^2.1.2",
     "react-native-popup-menu": "^0.12.1",
     "react-native-scrollable-tab-view": "^0.8.0",
-    "react-router-native": "^4.2.0"
+    "react-redux": "^5.0.6",
+    "react-router-native": "^4.2.0",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-jest": "22.0.4",
