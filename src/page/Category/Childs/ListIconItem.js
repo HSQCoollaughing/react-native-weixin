@@ -6,7 +6,8 @@ export default class ListIconItem extends React.Component {
   render () {
     return <TouchableHighlight style={{backgroundColor: '#fff'}} underlayColor='#DDDDDD' onPress={() => {}}>
       <View style={styles.iconItem}>
-        <Image style={styles.icon} source={this.props.icon || require('src/assets/imgs/ic_new_friend.png')}/>
+        <Image style={[styles.icon, this.props.iconSize]}
+               source={this.props.icon || require('src/assets/imgs/ic_new_friend.png')}/>
         <Text style={styles.text}>{this.props.text || '新的朋友'}</Text>
       </View>
     </TouchableHighlight>

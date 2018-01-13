@@ -18,16 +18,16 @@ export default class ChatList extends React.PureComponent {
 
   componentDidMount () {
     let id = 2
-    setInterval(() => {
-      id++
-      this.props.addMsg({
-        id: id,
-        name: `腾讯新闻`,
-        msgNum: 8,
-        msgText: '不知道干点啥！',
-        date: '11:32'
-      })
-    }, 5000)
+    // setInterval(() => {
+    //   id++
+    //   this.props.addMsg({
+    //     id: id,
+    //     name: `腾讯新闻`,
+    //     msgNum: 8,
+    //     msgText: '不知道干点啥！',
+    //     date: '11:32'
+    //   })
+    // }, 5000)
   }
 
   componentWillUnmount () {

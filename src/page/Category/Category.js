@@ -7,7 +7,39 @@ export default class Category extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      categoryList: ['A']
+      categoryList: [
+        {
+          id: '1',
+          type: 'letter',
+          data: 'A'
+        },
+        {
+          type: 'category',
+          id: '2',
+          data: {
+            name: 'AAAA'
+          }
+        },
+        {
+          type: 'category',
+          id: '3',
+          data: {
+            name: 'ACCC'
+          }
+        },
+        {
+          id: '4',
+          type: 'letter',
+          data: 'C'
+        },
+        {
+          id: '5',
+          type: 'category',
+          data: {
+            name: 'C1111'
+          }
+        },
+      ]
     }
   }
 
@@ -22,23 +54,30 @@ export default class Category extends React.Component {
         <FlatList
           extraData={this.state.categoryList}
           data={this.state.categoryList}
-          keyExtractor={item => item}
-          renderItem={({item}) => this.renderLetter(item)}
-        />
+          keyExtractor={item => item.id}
+          renderItem={({item}) => this.renderItem(item)}/>
       </View>
     )
   }
 
-  renderLetter (letter) {
-    return <Text style={styles.letter}>{letter}</Text>
+  renderItem (item) {
+    if (item.type === 'letter') {
+      return <View style={styles.letter}>
+        <Text>{item.data}</Text>
+      </View>
+    } else if (item.type === 'category') {
+      return <ListIconItem icon={require('src/assets/imgs/touxiang.jpg')} text={item.data.name}/>
+    }
   }
 }
 
 // language=CSS
 const styles = RNC(`
     .letter {
-        height: 45px;
-        background-color: #777777;
+        height: 24px;
+        padding-left: 20px;
+        background-color: #CCCCCC;
+        justify-content: center;
     }
 
 
