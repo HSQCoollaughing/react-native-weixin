@@ -2,8 +2,9 @@ const initState = {
   msgs: []
 }
 
-function chat (state = initState, action) {
+export function chat (state = initState, action) {
   switch (action.type) {
-
+    default:
+      return state
   }
 }

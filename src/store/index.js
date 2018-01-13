@@ -1,8 +1,6 @@
 import { combineReducers, createStore } from 'redux'
-import chat from './reducers/chat'
+import { chat } from './reducers/chat'
 
-const reducers = combineReducers({
+export default createStore(combineReducers({
   chat
-})
-
-export default createStore(reducers)
+}))
