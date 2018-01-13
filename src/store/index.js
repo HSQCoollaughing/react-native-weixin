@@ -1,6 +1,12 @@
-import { combineReducers, createStore } from 'redux'
+import { combineReducers, createStore, applyMiddleware } from 'redux'
+import logger from 'redux-logger'
 import { chat } from './reducers/chat'
 
-export default createStore(combineReducers({
+const reducer = combineReducers({
   chat
-}))
+})
+
+export default createStore(
+  reducer,
+  applyMiddleware(logger)
+)
