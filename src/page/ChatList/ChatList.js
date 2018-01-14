@@ -2,11 +2,11 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { View, Text, FlatList, TouchableHighlight } from 'react-native'
 import ChatListItem from './Childs/ChatListItem'
-import { addMsg, addNum } from 'src/store/reducers/chat'
+import { addMsg } from 'src/store/reducers/chat'
 
 @connect(
   state => state.chat,
-  {addMsg, addNum}
+  {addMsg}
 )
 export default class ChatList extends React.PureComponent {
   _keyExtractor = (item) => item.id
