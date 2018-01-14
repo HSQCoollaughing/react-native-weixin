@@ -26,19 +26,34 @@ export default class HomeHeader extends React.Component {
           </MenuTrigger>
           <MenuOptions customStyles={optionsStyles}>
             <MenuOption onSelect={() => alert(`发起群聊`)}>
-              <Text style={styles.menu}>发起群聊</Text>
+              <View style={styles.menu}>
+                <Image style={styles.menuIcon} source={require('src/assets/imgs/ic_create_group_cheat.png')}/>
+                <Text style={styles.menuText}>发起群聊</Text>
+              </View>
             </MenuOption>
             <MenuOption onSelect={() => alert(`添加朋友`)}>
-              <Text style={styles.menu}>添加朋友</Text>
+              <View style={styles.menu}>
+                <Image style={styles.menuIcon} source={require('src/assets/imgs/ic_add_friend.png')}/>
+                <Text style={styles.menuText}>添加朋友</Text>
+              </View>
             </MenuOption>
             <MenuOption onSelect={() => alert(`扫一扫`)}>
-              <Text style={styles.menu}>扫一扫</Text>
+              <View style={styles.menu}>
+                <Image style={styles.menuIcon} source={require('src/assets/imgs/ic_scan_white.png')}/>
+                <Text style={styles.menuText}>扫一扫</Text>
+              </View>
             </MenuOption>
             <MenuOption onSelect={() => alert(`收付款`)}>
-              <Text style={styles.menu}>收付款</Text>
+              <View style={styles.menu}>
+                <Image style={styles.menuIcon} source={require('src/assets/imgs/ic_payment_received.png')}/>
+                <Text style={styles.menuText}>收付款</Text>
+              </View>
             </MenuOption>
             <MenuOption onSelect={() => alert(`帮助与反馈`)}>
-              <Text style={styles.menu}>帮助与反馈</Text>
+              <View style={styles.menu}>
+                <Image style={styles.menuIcon} source={require('src/assets/imgs/ic_help_feedback.png')}/>
+                <Text style={styles.menuText}>帮助与反馈</Text>
+              </View>
             </MenuOption>
           </MenuOptions>
         </Menu>
@@ -81,9 +96,17 @@ flex: 0;
     position: absolute;
     right: 64px;
 }
-
 .menu{
+flex-direction: row;
+align-items: center;
+}
+.menuIcon{
+width: 20px;
+height: 20px;
+}
+.menuText{
 color: #fff;
+margin-left: 12px;
 }
 `)
 
