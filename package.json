@@ -12,7 +12,7 @@
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-css": "^2.1.2",
-    "react-native-popup-menu": "^0.12.1",
+    "react-native-material-menu": "^0.2.3",
     "react-native-scrollable-tab-view": "^0.8.0",
     "react-redux": "^5.0.6",
     "react-router-native": "^4.2.0",

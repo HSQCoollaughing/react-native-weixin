@@ -3636,6 +3636,12 @@ react-native-css@^2.1.2:
     pre-commit "^1.2.2"
     to-camel-case "~0.2.0"
 
+react-native-material-menu@^0.2.3:
+  version "0.2.3"
+  resolved "http://registry.npm.taobao.org/react-native-material-menu/download/react-native-material-menu-0.2.3.tgz#bb61944c3a5933e21aac394e002e38218c63ba51"
+  dependencies:
+    prop-types "^15.6.0"
+
 react-native-popup-menu@^0.12.1:
   version "0.12.1"
   resolved "http://registry.npm.taobao.org/react-native-popup-menu/download/react-native-popup-menu-0.12.1.tgz#513bc64a0796e125cda01937366087a3401fcfb2"
