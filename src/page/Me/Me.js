@@ -26,14 +26,34 @@ export default class Me extends React.Component {
 
       </View>
       <View style={styles.block}/>
-      <IconItem isDivider={false} icon={require('src/assets/imgs/ic_wallet_blue1.png')} text="钱包"/>
+      <IconItem
+        iconSize={{width: 25, height: 25}}
+        isDivider={false}
+        icon={require('src/assets/imgs/ic_wallet_blue1.png')}
+        text="钱包"/>
       <View style={styles.block}/>
-      <IconItem icon={require('src/assets/imgs/ic_sellection1.png')} text="收藏"/>
-      <IconItem icon={require('src/assets/imgs/ic_photo_blue1.png')} text="相册"/>
-      <IconItem icon={require('src/assets/imgs/ic_card_pack1.png')} text="卡包"/>
-      <IconItem icon={require('src/assets/imgs/ic_emo_yellow.png')} text="表情"/>
+      <IconItem
+        iconSize={{width: 25, height: 25}}
+        icon={require('src/assets/imgs/ic_sellection1.png')}
+        text="收藏"/>
+      <IconItem
+        iconSize={{width: 25, height: 25}}
+        icon={require('src/assets/imgs/ic_photo_blue1.png')}
+        text="相册"/>
+      <IconItem
+        iconSize={{width: 25, height: 25}}
+        icon={require('src/assets/imgs/ic_card_pack1.png')}
+        text="卡包"/>
+      <IconItem
+        iconSize={{width: 25, height: 25}}
+        icon={require('src/assets/imgs/ic_emo_yellow.png')}
+        text="表情"/>
       <View style={styles.block}/>
-      <IconItem isDivider={false} icon={require('src/assets/imgs/ic_setting_blue.png')} text="设置"/>
+      <IconItem
+        iconSize={{width: 25, height: 25}}
+        isDivider={false}
+        icon={require('src/assets/imgs/ic_setting_blue.png')}
+        text="设置"/>
     </View>
   }
 }
@@ -84,6 +104,6 @@ height: 20px;
 }
 .block {
     background-color: ${theme.bgColor};
-    height: 24px;
+    height: 16px;
 }
 `)

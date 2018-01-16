@@ -17,8 +17,9 @@ export default class App extends Component {
           <View style={styles.container}>
             <StatusBar barStyle='light-content' backgroundColor='#373b3e'/>
             <Switch>
-              <Route exact path='/' component={Start}/>
-              <Route exact path='/home' component={Home}/>
+              {/*<Route exact path='/' component={Start}/>*/}
+              {/*<Route exact path='/home' component={Home}/>*/}
+              <Route exact path='/' component={Home}/>
             </Switch>
           </View>
         </NativeRouter>

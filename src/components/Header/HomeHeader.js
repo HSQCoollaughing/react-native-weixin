@@ -126,7 +126,7 @@ const optionsStyles = {
   },
   optionTouchable: {
     underlayColor: '#373b3e',
-    activeOpacity: 70,
+    activeOpacity: 50,
   },
   optionText: {
     color: '#fff',
