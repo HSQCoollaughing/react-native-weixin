@@ -17,8 +17,10 @@ export default class HomeHeader extends React.Component {
     return (
       <View style={styles.header}>
         <Text style={styles.headerTitle}>微信（156）</Text>
-        <Image resizeMode='contain' style={[styles.headerImageSize, styles.headerImageSearch]}
-               source={require('src/assets/imgs/ic_search_white.png')}/>
+        <Image
+          resizeMode='contain'
+          style={[styles.headerImageSize, styles.headerImageSearch]}
+          source={require('src/assets/imgs/ic_search_white.png')}/>
         <Menu style={[styles.headerImageSize, styles.headerImageAdd]}>
           <MenuTrigger style={[styles.headerImageSize]}>
             <Image resizeMode='contain' style={[styles.headerImageSize]}
@@ -65,7 +67,7 @@ export default class HomeHeader extends React.Component {
 // language=CSS
 const styles = RNC(`
 .header {
-flex: 0;
+    flex: 0;
     height: 50px;
     width: ${width};
     background-color: #373b3e;
@@ -96,17 +98,20 @@ flex: 0;
     position: absolute;
     right: 64px;
 }
-.menu{
-flex-direction: row;
-align-items: center;
+
+.menu {
+    flex-direction: row;
+    align-items: center;
 }
-.menuIcon{
-width: 20px;
-height: 20px;
+
+.menuIcon {
+    width: 20px;
+    height: 20px;
 }
-.menuText{
-color: #fff;
-margin-left: 12px;
+
+.menuText {
+    color: #fff;
+    margin-left: 12px;
 }
 `)
 
