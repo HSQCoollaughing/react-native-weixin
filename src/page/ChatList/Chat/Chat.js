@@ -11,6 +11,4 @@ export default class Chat extends React.Component {
 
 // language=CSS
 const styles = RNC(`
-
-
 `)
